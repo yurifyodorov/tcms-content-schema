@@ -9,6 +9,9 @@
     "title": {
       "type": "string"
     },
+    "description": {
+      "type": "string"
+    },
     "shortDescription": {
       "type": "string"
     },

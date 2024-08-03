@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schemas/project.schema.json
+
+id: "{cuid}"
+title: "Test project"
+description: |
+  ## Project the best
+  - 1
+  - 2 
+  - [3](https://google.com)
+cases:
+  - "case-1"
