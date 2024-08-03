@@ -1,0 +1,22 @@
+{
+  "name": "tcms-content-schema",
+  "version": "1.0.0",
+  "description": "Content schemas for TCMS",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuri Fedorov",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "json-schema-to-typescript": "^15.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
