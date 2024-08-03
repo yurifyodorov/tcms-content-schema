@@ -7,7 +7,8 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen:types": "ts-node ./scripts/generate-schema-types.ts ./schemas"
   },
   "author": "Yuri Fedorov",
   "license": "ISC",
