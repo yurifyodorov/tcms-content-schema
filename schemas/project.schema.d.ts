@@ -12,5 +12,8 @@ export interface Project {
   id: Uuid;
   title: string;
   description: string;
+  shortDescription?: string;
+  thumbnail: string;
+  image: string;
   cases: CasePath[];
 }

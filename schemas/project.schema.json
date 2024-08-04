@@ -5,7 +5,9 @@
     "id",
     "title",
     "description",
-    "cases"
+    "cases",
+    "thumbnail",
+    "image"
   ],
   "additionalProperties": false,
   "properties": {
@@ -15,6 +17,17 @@
     },
     "description": {
       "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string",
+      "$comment": "url to image sizes 600x300"
+    },
+    "image": {
+      "type": "string",
+      "$comment": "url to image sizes 1920x600"
     },
     "cases": {
       "type": "array",
