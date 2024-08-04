@@ -1,3 +1,4 @@
 schemas/*ts
 node_modules
 playground
+.idea
