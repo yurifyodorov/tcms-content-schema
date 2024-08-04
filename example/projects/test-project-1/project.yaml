@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=../../../schemas/project.schema.json
 
 id: "{cuid}"
+thumbnail: "https://s3.timeweb.cloud/ca1c67e1-tcms-images/content/logo-react.svg"
+image: "https://s3.timeweb.cloud/ca1c67e1-tcms-images/content/images.jpeg"
 title: "Test project"
 description: |
   ## Project the best
