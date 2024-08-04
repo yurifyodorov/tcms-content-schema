@@ -11,9 +11,12 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "id": { "type": "string", "title": "Uuid" },
+    "id": {
+      "$ref": "#/definitions/cuid"
+    },
     "title": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 100
     },
     "description": {
       "type": "string"
@@ -29,12 +32,23 @@
       "type": "string",
       "$comment": "url to image sizes 1920x600"
     },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/cuid"
+      }
+    },
     "cases": {
       "type": "array",
       "items": {
-        "type": "string",
-        "title": "CasePath"
+        "$ref": "#/definitions/cuid"
       }
+    }
+  },
+  "definitions": {
+    "cuid": {
+      "type": "string",
+      "title": "cuid"
     }
   }
 }
