@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/yurifyodorov/tcms-content-schema/main/schemas/case.schema.json
+id: "{cuid}"
+title: "Test title"
+blocks:
+  - type: "text"
+    id: "{cuid}"
+    text: |
+
+      <img width="50%" src="https://s3.timeweb.com/132514fc-images-staging/content/1 0 (7).png"/>
+
+      ## Что будем тестировать сегодня
+
+      Вопрос открытый.
+    
+
+  - type: "video"
+    id: "{cuid}"
+    url: "https://example.com/video/python-advanced"
+
+  - type: "text"
+    id: "{cuid}"
+    text: |
+      ## Testtttt
+
+     Testsddsdf :
+      - 122312
+      - 1212
+      - 1211
+
+  - type: "question"
+    id: "{cuid}"
+    answerOptions:
+      - text: "testd1231232?"
+        id: "{cuid}"
+        isRight: false
+      - text: "2q3qvbfdfgg"
+        id: "{cuid}"
+        isRight: true
+    explanation: |
+      ### EWVWbcAC
+
+      TestTest.
+      TestTestTestTestTestTestTestTest.
+    successMessage: |
+      🎉 **Отлично!**

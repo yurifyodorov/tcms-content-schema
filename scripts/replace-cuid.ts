@@ -36,5 +36,5 @@ function watchYAMLFiles(relativePath: string) {
 }
 
 // Использование аргумента командной строки для указания относительного пути
-const relativePath: string = process.argv[2];
+const relativePath: string = process.argv[2]; // По умолчанию используется './test-structure'
 watchYAMLFiles(relativePath);

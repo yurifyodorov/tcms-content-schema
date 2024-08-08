@@ -1,4 +1,3 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/yurifyodorov/tcms-content-schema/main/schemas/manifest.schema.json
-
 projects:
   - "test-project-1"
