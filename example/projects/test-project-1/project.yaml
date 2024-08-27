@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/yurifyodorov/tcms-content-schema/main/schemas/project.schema.json
 
 id: "{cuid}"
-thumbnail: "https://s3.timeweb.com/132514fc-images-staging/content/logo-react.svg"
+thumbnail: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
 dependencies:
   - "test-project-2"
 title: "Test project"
