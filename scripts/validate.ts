@@ -46,7 +46,7 @@ const checkIds = (obj: any, context: string, path = "") => {
   }
 };
 
-// VALIDATE CHEMA
+// VALIDATE SCHEMA
 
 const caseSchema = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "../schemas/case.schema.json"), {
@@ -65,13 +65,13 @@ const manifestSchema = JSON.parse(
 );
 
 async function validateCase(file: string) {
-  const testCase = await contentParser.parse<Case>(
+  const caseItem = await contentParser.parse<Case>(
     fs.readFileSync(file, "utf8"),
     caseSchema
   );
 
-  checkIds(testCase, file);
-  return testCase;
+  checkIds(caseItem, file);
+  return caseItem;
 }
 
 async function validateProject(file: string) {
