@@ -1,14 +1,18 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/yurifyodorov/tcms-content-schema/main/schemas/project.schema.json
 
 id: "{cuid}"
-thumbnail: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
-dependencies:
-  - "test-project-2"
 title: "Test project"
 description: |
   ## Project the best
   - 1
   - 2 
-  - [3](http://google.com)
+  - [3](https://google.com)
 cases:
   - "case-1"
+thumbnail: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
+image: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
+product:
+  access: private
+  price: 3999
+dependencies:
+  - "test-project-2"
