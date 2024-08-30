@@ -8,10 +8,10 @@
 export type Cuid = string;
 export type Product =
   | {
-      access: "free";
+      access: "public";
     }
   | {
-      access: "paid";
+      access: "private";
       price: number;
     };
 

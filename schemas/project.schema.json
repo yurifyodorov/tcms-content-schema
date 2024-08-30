@@ -62,7 +62,7 @@
           "required": ["access"],
           "properties": {
             "access": {
-              "const": "free"
+              "const": "public"
             }
           }
         },
@@ -72,7 +72,7 @@
           "required": ["access", "price"],
           "properties": {
             "access": {
-              "const": "paid"
+              "const": "private"
             },
             "price": {
               "type": "number"
