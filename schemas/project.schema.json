@@ -7,7 +7,8 @@
     "description",
     "cases",
     "thumbnail",
-    "image"
+    "image",
+    "product"
   ],
   "additionalProperties": false,
   "properties": {
@@ -43,12 +44,42 @@
       "items": {
         "$ref": "#/definitions/cuid"
       }
+    },
+    "product": {
+      "$ref": "#/definitions/product"
     }
   },
   "definitions": {
     "cuid": {
       "type": "string",
       "title": "cuid"
+    },
+    "product": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["access"],
+          "properties": {
+            "access": {
+              "const": "public"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["access", "price"],
+          "properties": {
+            "access": {
+              "const": "private"
+            },
+            "price": {
+              "type": "number"
+            }
+          }
+        }
+      ]
     }
   }
 }
