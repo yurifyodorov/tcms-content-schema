@@ -13,8 +13,7 @@
     "replace-cuid": "ts-node ./scripts/replace-cuid.ts",
     "validate": "ts-node ./scripts/validate.ts",
     "dev": "concurrently -P --kill-others \"npm:replace-cuid -- {@}\" \"npm:validate -- {@}\" --",
-    "dev:staging": "npm run dev -- ../staging-content/",
-    "dev:prod": "npm run dev -- ../prod-content/"
+    "dev:prod": "npm run dev -- ../tcms-content/"
   },
   "author": "Yuri Fedorov",
   "license": "ISC",
