@@ -69,13 +69,10 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["access", "price"],
+          "required": ["access"],
           "properties": {
             "access": {
               "const": "private"
-            },
-            "price": {
-              "type": "number"
             }
           }
         }

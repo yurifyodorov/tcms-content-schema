@@ -13,6 +13,5 @@ thumbnail: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
 image: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
 product:
   access: private
-  price: 3999
 dependencies:
   - "test-project-2"
