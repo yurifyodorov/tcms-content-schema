@@ -12,7 +12,6 @@ export type Product =
     }
   | {
       access: "private";
-      price: number;
     };
 
 export interface Project {
