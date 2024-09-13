@@ -1,12 +1,12 @@
 import fs from "fs";
 import path from "path";
 import chokidar from "chokidar";
-import cuid from "cuid";
+import { createId } from '@paralleldrive/cuid2';
 
 function replaceCuidInFile(file: string) {
   try {
     let content = fs.readFileSync(file, "utf8");
-    const updatedContent = content.replace(/{cuid}/g, () => cuid());
+    const updatedContent = content.replace(/{cuid}/g, () => createId());
 
     if (content !== updatedContent) {
       fs.writeFileSync(file, updatedContent, "utf8");

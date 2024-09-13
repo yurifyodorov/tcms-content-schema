@@ -20,13 +20,13 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "ajv": "^8.17.1",
-    "chokidar": "^3.6.0",
-    "cuid": "^3.0.0",
-    "json-schema-to-typescript": "^15.0.0",
-    "yaml": "^2.5.0"
+    "@paralleldrive/cuid2": "^2.2.2",
+    "ajv": "^8.12.0",
+    "chokidar": "^3.5.3",
+    "json-schema-to-typescript": "^13.1.2",
+    "yaml": "^2.3.4"
   }
 }
