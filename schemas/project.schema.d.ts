@@ -16,7 +16,7 @@ export type Product =
 
 export interface Project {
   id: Cuid;
-  name: string;
+  title: string;
   description: string;
   shortDescription?: string;
   thumbnail: string;
