@@ -3,7 +3,7 @@
   "type": "object",
   "required": [
     "id",
-    "name",
+    "title",
     "description",
     "cases",
     "thumbnail",
@@ -15,7 +15,7 @@
     "id": {
       "$ref": "#/definitions/cuid"
     },
-    "name": {
+    "title": {
       "type": "string",
       "maxLength": 100
     },
