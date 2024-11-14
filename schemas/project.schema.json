@@ -8,7 +8,9 @@
     "cases",
     "thumbnail",
     "image",
-    "product"
+    "product",
+    "contentUrl",
+    "contentToken"
   ],
   "additionalProperties": false,
   "properties": {
