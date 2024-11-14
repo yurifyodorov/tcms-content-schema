@@ -49,6 +49,12 @@
     },
     "product": {
       "$ref": "#/definitions/product"
+    },
+    "contentUrl": {
+      "type": "string"
+    },
+    "contentToken": {
+      "type": "string"
     }
   },
   "definitions": {
