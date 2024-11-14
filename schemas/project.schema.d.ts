@@ -24,4 +24,6 @@ export interface Project {
   dependencies?: Cuid[];
   cases: Cuid[];
   product: Product;
+  contentUrl: string;
+  contentToken: string;
 }
