@@ -14,7 +14,7 @@ export type Product =
       access: "private";
     };
 
-export interface Project {
+export interface Feature {
   id: Cuid;
   title: string;
   description: string;

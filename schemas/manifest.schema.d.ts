@@ -6,5 +6,5 @@
  */
 
 export interface Manifest {
-  projects: string[];
+  features: string[];
 }

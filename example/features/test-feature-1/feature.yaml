@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/yurifyodorov/tcms-content-schema/main/schemas/project.schema.json
 
 id: "{cuid}"
-title: "Test project"
+title: "Test feature"
 description: |
-  ## Project the best
+  ## Feature the best
   - 1
   - 2 
   - [3](https://google.com)
@@ -14,4 +14,4 @@ image: "https://s3.timeweb.com/ca1c67e1-tcms-images/content/logo-react.svg"
 product:
   access: private
 dependencies:
-  - "test-project-2"
+  - "test-feature-2"

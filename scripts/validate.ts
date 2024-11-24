@@ -4,7 +4,7 @@ import chokidar from "chokidar";
 import * as Yaml from "yaml";
 import Ajv from "ajv";
 import { Case } from "../schemas/case.schema";
-import { Project } from "../schemas/project.schema";
+import { Feature } from "../schemas/feature.schema";
 import { Manifest } from "../schemas/manifest.schema";
 
 export class ContentParser {
@@ -53,8 +53,8 @@ const caseSchema = JSON.parse(
     encoding: "utf8",
   })
 );
-const projectSchema = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "../schemas/project.schema.json"), {
+const featureSchema = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "../schemas/feature.schema.json"), {
     encoding: "utf8",
   })
 );
@@ -74,21 +74,20 @@ async function validateCase(file: string) {
   return caseItem;
 }
 
-async function validateProject(file: string) {
-  const project = await contentParser.parse<Project>(
+async function validateFeature(file: string) {
+  const feature = await contentParser.parse<Feature>(
     fs.readFileSync(file, "utf8"),
-    projectSchema
+    featureSchema
   );
-  checkIds(project, file);
-  return project;
+  checkIds(feature, file);
+  return feature;
 }
 
 async function validateManifest(file: string) {
-  const manifest = await contentParser.parse<Manifest>(
-    fs.readFileSync(file, "utf8"),
-    manifestSchema
+  return await contentParser.parse<Manifest>(
+      fs.readFileSync(file, "utf8"),
+      manifestSchema
   );
-  return manifest;
 }
 
 async function scanDirectory(directoryPath: string) {
@@ -96,14 +95,14 @@ async function scanDirectory(directoryPath: string) {
 
   const manifest = await validateManifest(`${directoryPath}/manifest.yaml`);
 
-  for (const projectPath of manifest.projects) {
-    const project = await validateProject(
-      `${directoryPath}/projects/${projectPath}/project.yaml`
+  for (const featurePath of manifest.features) {
+    const feature = await validateFeature(
+      `${directoryPath}/features/${featurePath}/feature.yaml`
     );
 
-    for (const casePath of project.cases) {
+    for (const casePath of feature.cases) {
       await validateCase(
-        `${directoryPath}/projects/${projectPath}/cases/${casePath}/case.yaml`
+        `${directoryPath}/features/${featurePath}/cases/${casePath}/case.yaml`
       );
     }
   }
